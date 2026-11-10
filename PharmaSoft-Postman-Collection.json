@@ -1,0 +1,215 @@
+{
+  "info": {
+    "name": "PharmaSoft PostgreSQL API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /api/health",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "health"
+          ]
+        },
+        "header": []
+      }
+    },
+    {
+      "name": "GET /api/v1/categorias",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias"
+          ]
+        },
+        "header": []
+      }
+    },
+    {
+      "name": "POST /api/v1/categorias",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "categorias"
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Analgesicos\",\n  \"descripcion\": \"Medicamentos para dolor\",\n  \"estado\": true\n}"
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/productos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        },
+        "header": []
+      }
+    },
+    {
+      "name": "POST /api/v1/productos",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Paracetamol\",\n  \"precio\": 5.5,\n  \"stock\": 100,\n  \"categoriaId\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/clientes",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "clientes"
+          ]
+        },
+        "header": []
+      }
+    },
+    {
+      "name": "POST /api/v1/clientes",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "clientes"
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"dni\": \"12345678\",\n  \"nombres\": \"Juan\",\n  \"apellidos\": \"Perez\",\n  \"email\": \"juan@mail.com\",\n  \"telefono\": \"999999999\",\n  \"direccion\": \"Lima\"\n}"
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/ventas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/ventas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "ventas"
+          ]
+        },
+        "header": []
+      }
+    },
+    {
+      "name": "GET /api/v1/reportes/productos-mas-vendidos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/v1/reportes/productos-mas-vendidos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "reportes",
+            "productos-mas-vendidos"
+          ]
+        },
+        "header": []
+      }
+    }
+  ]
+}
