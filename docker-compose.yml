@@ -3,11 +3,11 @@ services:
     image: postgres:16
     container_name: pharmadb
     environment:
-      POSTGRES_DB: pharmadb
+      POSTGRES_DB: pharma_guia14
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Defina DB_PASSWORD antes de iniciar PostgreSQL}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 volumes:
